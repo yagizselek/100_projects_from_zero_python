@@ -15,7 +15,7 @@ guess = ""
 guesses = []
 while not game_over:
     if guess != "":
-        print(f"****************************<???>/{lives} LIVES LEFT****************************")
+        print(f"**************************** {lives} LIVES LEFT****************************")
     guess = input("Guess a letter: ").lower()
 
     checker = 0
