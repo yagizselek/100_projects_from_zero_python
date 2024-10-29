@@ -5,13 +5,13 @@ first_number = None
 
 def first_num():
     global first_number
-    while type(first_number) != int:
+    while type(first_number) != float:
         if first_number is None:
             first_number = input("What's the first number?: ")
-        elif type(first_number) is not int:
+        elif type(first_number) is not float:
             first_number = input("Please write a number.\nWhat's the first number?: ")
         try:
-            first_number = int(first_number)
+            first_number = float(first_number)
         finally:
             continue
     return first_number
@@ -34,7 +34,7 @@ while True:
     second_number_valid = False
     while not second_number_valid:
         try:
-            second_number = int(second_number)
+            second_number = float(second_number)
             second_number_valid = True
         except ValueError:
             second_number = input("Please write a number.\nWhat's the second number?: ")
